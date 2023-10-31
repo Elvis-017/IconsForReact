@@ -26,8 +26,17 @@ color: #282c34;
   display: flex;
   justify-content: center;
   flex-direction: row;
+
+  }
+
+  .template .element:hover{
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: all .5s;
   }
   
+
+
 
 /* Default */
 .App {

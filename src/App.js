@@ -19,6 +19,9 @@ import { PiFolderOpenFill, PiDownloadFill } from 'react-icons/pi';
 
 import { GrSend } from 'react-icons/gr';
 
+import {ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <div className="App">
@@ -27,30 +30,30 @@ function App() {
         <div>React Icons</div>
 
         <div className='container'>
-          <Template title="Editar" elements={[<TbEditCircle/>, <TiEdit/>]} />
-          <Template title="Guardar"  elements={[<FaSave/>, <LuSave/>]} />
-          <Template title="Insertar" elements={[<BsPlusCircleFill/>, <FaPlus/>]} />
+          <Template title="Editar" elements={[<TbEditCircle name={"TbEditCircle"} />, <TiEdit name={TiEdit}/>]} />
+          <Template title="Guardar"  elements={[<FaSave name={"FaSave"}/>, <LuSave name={"LuSave"}/>]} />
+          <Template title="Insertar" elements={[<BsPlusCircleFill name={"BsPlusCircleFill"}/>, <FaPlus name={"FaPlus"}/>]} />
 
         </div>
 
         <div className='container'>
-          <Template title="Buscar"  elements={[<MdOutlineManageSearch/>, <BiSearchAlt2/>]} />
-          <Template title="Procesar" elements={[<ImSpinner3/>, <ImSpinner4/>]} />
-          <Template title="Descargar"  elements={[<ImDownload/>, <PiDownloadFill/>]} />
+          <Template title="Buscar"  elements={[<MdOutlineManageSearch name={"MdOutlineManageSearch"}/>, <BiSearchAlt2 name={"BiSearchAlt2"}/>]} />
+          <Template title="Procesar" elements={[<ImSpinner3 name={"ImSpinner3"}/>, <ImSpinner4 name={"ImSpinner4"}/>]} />
+          <Template title="Descargar"  elements={[<ImDownload name={"ImDownload"}/>, <PiDownloadFill name={"PiDownloadFill"}/>]} />
 
         </div>
       
         <div className='container'>
-          <Template title="Enviar" elements={[<IoIosSend/>, <GrSend/>]} />
-          <Template title="Recibir"  elements={[<MdCallReceived/>, <RiFolderReceivedFill/>]} />
-          <Template title="Ver"  elements={[<RiEye2Line/>, <TiEye/> ]} />
+          <Template title="Enviar" elements={[<IoIosSend name={"IoIosSend"}/>, <GrSend name={"GrSend"}/>]} />
+          <Template title="Recibir"  elements={[<MdCallReceived name={"MdCallReceived"}/>, <RiFolderReceivedFill name={"RiFolderReceivedFill"}/>]} />
+          <Template title="Ver"  elements={[<RiEye2Line name={"RiEye2Line"}/>, <TiEye name={"TiEye"}/> ]} />
 
         </div>
 
         <div className='container'>
-          <Template title="Eliminar" elements={[<MdDeleteForever/>, <RiDeleteBin3Fill/>]} />
-          <Template title="Cerrar" elements={[<RiCloseCircleFill/>, <BsDoorClosedFill/>]} />
-          <Template title="Abrir"  elements={[<PiFolderOpenFill/>, <FaDoorOpen/>]} />
+          <Template title="Eliminar" elements={[<MdDeleteForever name={"MdDeleteForever"}/>, <RiDeleteBin3Fill name={"RiDeleteBin3Fill"}/>]} />
+          <Template title="Cerrar" elements={[<RiCloseCircleFill name={"RiCloseCircleFill"}/>, <BsDoorClosedFill name={"BsDoorClosedFill"}/>]} />
+          <Template title="Abrir"  elements={[<PiFolderOpenFill name={"PiFolderOpenFill"}/>, <FaDoorOpen name={"FaDoorOpen"}/>]} />
 
         </div>
 
@@ -60,6 +63,7 @@ function App() {
 
       </header>
 
+  <ToastContainer/>
     </div>
   );
 }
