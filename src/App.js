@@ -11,6 +11,7 @@ import { BiSearchAlt2 } from 'react-icons/bi';
 
 import { ImSpinner3, ImSpinner4, ImDownload } from 'react-icons/im';
 import { IoIosSend } from 'react-icons/io';
+import { TbSettingsCheck } from 'react-icons/tb';
 import { RiFolderReceivedFill, RiEye2Line, RiDeleteBin3Fill, RiCloseCircleFill } from 'react-icons/ri';
 
 import { TiEye } from 'react-icons/ti';
@@ -18,6 +19,7 @@ import { BsDoorClosedFill } from 'react-icons/bs';
 import { PiFolderOpenFill, PiDownloadFill } from 'react-icons/pi';
 
 import { GrSend } from 'react-icons/gr';
+import { TfiSettings } from 'react-icons/tfi';
 
 import {ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -38,7 +40,7 @@ function App() {
 
         <div className='container'>
           <Template title="Buscar"  elements={[<MdOutlineManageSearch name={"MdOutlineManageSearch"}/>, <BiSearchAlt2 name={"BiSearchAlt2"}/>]} />
-          <Template title="Procesar" elements={[<ImSpinner3 name={"ImSpinner3"}/>, <ImSpinner4 name={"ImSpinner4"}/>]} />
+          <Template title="Procesar" elements={[<TbSettingsCheck name={"TbSettingsCheck"}/>, <TfiSettings name={"TfiSettings"}/>]} />
           <Template title="Descargar"  elements={[<ImDownload name={"ImDownload"}/>, <PiDownloadFill name={"PiDownloadFill"}/>]} />
 
         </div>
